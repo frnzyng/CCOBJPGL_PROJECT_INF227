@@ -1,0 +1,18 @@
+#loginBtn:hover {
+    -fx-background-color: #DF4A90;
+    -fx-text-fill: #ffffff;
+}
+
+#loginBtn{
+    -fx-background-color: #E98BB7;
+    -fx-text-fill: #ffffff;  
+}
+
+.text-field {
+    -fx-background-color: #EDEDED; /* Sets the background color */
+}
+
+.text-field:focus-within {
+    -fx-border-color: #df4a90; /* Sets the border color on hover */
+    -fx-border-width: 2px; /* Sets the border width on hover */
+}

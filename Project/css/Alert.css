@@ -1,0 +1,37 @@
+/*.alert .dialog-pane .alert-icon {
+    -fx-background-image: none;
+}*/
+
+.dialog-pane {
+    -fx-background-color: #ffffff;
+}
+
+.dialog-pane:header .header-panel {
+    -fx-background-color: #ffffff;
+}
+
+.dialog-pane:header .header-panel .label {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #DF4A90;
+}
+
+.dialog-pane .content.label {
+    -fx-font-size: 15px;
+    /*-fx-font-weight: bold;*/
+    -fx-alignment: center-left;
+    -fx-text-fill: #575757;
+    -fx-padding: 10px;
+}
+
+.dialog-pane .button {
+    -fx-font-size: 12px;
+    -fx-background-color: #E98BB7; 
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+}
+
+.dialog-pane .button:hover {
+    -fx-background-color: #DF4A90;
+    -fx-font-weight: bold;
+}

@@ -1,0 +1,28 @@
+.button {
+    -fx-background-color: null;
+    -fx-text-fill: #575757;
+    -fx-alignment: center-left;
+}
+
+.button:hover {
+    -fx-background-color: #E98BB7;
+    -fx-text-fill: #ffffff;
+}
+
+.label {
+    -fx-text-fill: #575757;
+}
+
+#chillSwirlLbl {
+    -fx-text-fill: #E98BB7;
+}
+
+#ratingsBtn {
+    -fx-background-color: #E98BB7;
+    -fx-text-fill: #ffffff;  
+}
+
+#starBtn1, #starBtn2, #starBtn3 {
+    -fx-background-color: null;
+    -fx-text-fill: #575757;  
+}

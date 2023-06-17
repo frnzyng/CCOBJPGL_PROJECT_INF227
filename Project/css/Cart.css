@@ -1,0 +1,71 @@
+.button {
+    -fx-background-color: null;
+    -fx-text-fill: #575757;
+    -fx-alignment: center-left;
+}
+
+.button:hover {
+    -fx-background-color: #E98BB7;
+    -fx-text-fill: #ffffff;
+}
+
+.label {
+    -fx-text-fill: #575757;
+}
+
+#chillSwirlLbl {
+    -fx-text-fill: #E98BB7;
+}
+
+#cartBtn {
+    -fx-background-color: #E98BB7;
+    -fx-text-fill: #ffffff;  
+}
+
+#removeBtn {
+    -fx-background-color: #E98BB7;
+    -fx-text-fill: #ffffff;  
+    -fx-alignment: center;
+}
+
+#removeBtn:hover {
+    -fx-background-color: #DF4A90;
+    -fx-text-fill: #ffffff; 
+    -fx-alignment: center;
+}
+
+#checkoutBtn {
+    -fx-background-color: #E98BB7;
+    -fx-text-fill: #ffffff;  
+    -fx-alignment: center;
+}
+
+#checkoutBtn:hover {
+    -fx-background-color: #DF4A90;
+    -fx-text-fill: #ffffff; 
+    -fx-alignment: center;
+}
+
+.table-cell {
+    -fx-text-fill: #575757; 
+    -fx-font-size: 14px; 
+}
+
+.column-header {
+    -fx-background-color: #E98BB7; 
+    -fx-font-weight: bold;
+    -fx-font-size: 14px; 
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: #ffffff; /* Set the desired text color for the column header */
+}
+
+.table-row-cell {
+    -fx-text-fill: #575757; 
+    -fx-background-color: #ffffff;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #FFDAEC;
+}
