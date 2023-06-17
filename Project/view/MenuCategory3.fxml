@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MenuCategory3Controller">
+   <children>
+      <Label fx:id="label" layoutX="370.0" layoutY="33.0" text="Ice Cream Cakes">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Group layoutX="23.0" layoutY="15.0">
+         <children>
+            <ImageView fitHeight="86.0" fitWidth="82.0" preserveRatio="true">
+               <image>
+                  <Image url="@../images/NavigationBar/Logo2.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="chillSwirlLbl" layoutX="87.0" layoutY="23.0" prefHeight="36.0" prefWidth="176.0" text="Chill &amp; Swirl" textFill="#e98bb7">
+               <font>
+                  <Font name="Fredoka One Regular" size="30.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="26.0" layoutY="117.0" preserveRatio="true">
+               <image>
+                  <Image url="@../images/NavigationBar/Home.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="homeBtn" layoutX="87.0" layoutY="114.0" mnemonicParsing="false" onAction="#navigationBar" prefHeight="35.0" prefWidth="176.0" text="Home" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="26.0" layoutY="178.0" preserveRatio="true">
+               <image>
+                  <Image url="@../images/NavigationBar/Menu.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="menuBtn" layoutX="87.0" layoutY="175.0" mnemonicParsing="false" onAction="#navigationBar" prefHeight="35.0" prefWidth="176.0" text="Menu" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="27.0" layoutY="239.0" preserveRatio="true">
+               <image>
+                  <Image url="@../images/NavigationBar/Cart.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="cartBtn" layoutX="87.0" layoutY="236.0" mnemonicParsing="false" onAction="#navigationBar" prefHeight="35.0" prefWidth="176.0" text="Cart" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="29.0" layoutY="300.0" preserveRatio="true">
+               <image>
+                  <Image url="@../images/NavigationBar/Ratings.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="ratingsBtn" layoutX="87.0" layoutY="297.0" mnemonicParsing="false" onAction="#navigationBar" prefHeight="35.0" prefWidth="176.0" text="Ratings" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="29.0" layoutY="361.0" preserveRatio="true">
+               <image>
+                  <Image url="@../images/NavigationBar/AboutUs.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="aboutUsBtn" layoutX="87.0" layoutY="358.0" mnemonicParsing="false" onAction="#navigationBar" prefHeight="35.0" prefWidth="176.0" text="About Us" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="29.0" layoutY="422.0" preserveRatio="true">
+               <image>
+                  <Image url="@../images/NavigationBar/Account.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="accountBtn" layoutX="87.0" layoutY="419.0" mnemonicParsing="false" onAction="#navigationBar" prefHeight="35.0" prefWidth="176.0" text="Account" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="29.0" layoutY="520.0" preserveRatio="true">
+               <image>
+                  <Image url="@../images/NavigationBar/Logout.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="logoutBtn" layoutX="87.0" layoutY="517.0" mnemonicParsing="false" onAction="#navigationBar" prefHeight="35.0" prefWidth="176.0" text="Logout" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Line endX="135.0" layoutX="130.0" layoutY="487.0" startX="-100.0" stroke="#e98bb7" strokeWidth="2.0" />
+         </children>
+      </Group>
+      <Group fx:id="group1" layoutX="370.0" layoutY="114.0">
+         <children>
+            <ImageView fitHeight="190.0" fitWidth="164.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/MenuCategory3/ICC_Cookies&amp;Cream.png" />
+               </image>
+            </ImageView>
+            <Pane layoutX="170.0" layoutY="209.0" prefHeight="190.0" prefWidth="102.0">
+               <children>
+                  <Label fx:id="productLbl3" ellipsisString="" layoutX="6.0" prefHeight="76.0" prefWidth="82.0" text="Product 1" textOverrun="CLIP" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="addBtn3" layoutX="5.0" layoutY="165.0" mnemonicParsing="false" onAction="#addToCart" prefHeight="25.0" prefWidth="82.0" text="Add to Cart">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Spinner fx:id="quantitySpnr3" editable="true" layoutX="5.0" layoutY="132.0" prefHeight="25.0" prefWidth="82.0" />
+                  <Label fx:id="priceLbl3" layoutX="7.0" layoutY="78.0" prefHeight="25.0" prefWidth="77.0" text="₱100.00" textAlignment="CENTER">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="5.0" layoutY="103.0" prefHeight="25.0" prefWidth="77.0" text="Quantity" textAlignment="CENTER">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <ImageView fitHeight="190.0" fitWidth="164.0" layoutY="210.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/MenuCategory3/ICC_ChocolateCrumble.png" />
+               </image>
+            </ImageView>
+            <Pane layoutX="170.0" prefHeight="190.0" prefWidth="102.0">
+               <children>
+                  <Label fx:id="productLbl1" ellipsisString="" layoutX="6.0" prefHeight="76.0" prefWidth="82.0" text="Product 1" textOverrun="CLIP" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="addBtn1" layoutX="5.0" layoutY="165.0" mnemonicParsing="false" onAction="#addToCart" text="Add to Cart">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Spinner fx:id="quantitySpnr1" editable="true" layoutX="5.0" layoutY="132.0" prefHeight="25.0" prefWidth="82.0" />
+                  <Label fx:id="priceLbl1" layoutX="7.0" layoutY="78.0" prefHeight="25.0" prefWidth="77.0" text="₱100.00" textAlignment="CENTER">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="5.0" layoutY="103.0" prefHeight="25.0" prefWidth="77.0" text="Quantity" textAlignment="CENTER">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <ImageView fitHeight="190.0" fitWidth="164.0" layoutX="317.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/MenuCategory3/ICC_RedVelvet.png" />
+               </image>
+            </ImageView>
+            <Pane layoutX="487.0" layoutY="209.0" prefHeight="190.0" prefWidth="102.0">
+               <children>
+                  <Label fx:id="productLbl4" ellipsisString="" layoutX="6.0" prefHeight="76.0" prefWidth="82.0" text="Product 1" textOverrun="CLIP" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="addBtn4" layoutX="5.0" layoutY="165.0" mnemonicParsing="false" onAction="#addToCart" prefHeight="25.0" prefWidth="82.0" text="Add to Cart">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Spinner fx:id="quantitySpnr4" editable="true" layoutX="5.0" layoutY="132.0" prefHeight="25.0" prefWidth="82.0" />
+                  <Label fx:id="priceLbl4" layoutX="7.0" layoutY="78.0" prefHeight="25.0" prefWidth="77.0" text="₱100.00" textAlignment="CENTER">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="5.0" layoutY="103.0" prefHeight="25.0" prefWidth="77.0" text="Quantity" textAlignment="CENTER">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <ImageView fitHeight="190.0" fitWidth="164.0" layoutX="317.0" layoutY="210.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/MenuCategory3/ICC_ChocolateChip.png" />
+               </image>
+            </ImageView>
+            <Pane layoutX="487.0" prefHeight="190.0" prefWidth="102.0">
+               <children>
+                  <Label fx:id="productLbl2" ellipsisString="" layoutX="6.0" prefHeight="76.0" prefWidth="82.0" text="Product 1" textOverrun="CLIP" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="addBtn2" layoutX="5.0" layoutY="165.0" mnemonicParsing="false" onAction="#addToCart" prefHeight="25.0" prefWidth="82.0" text="Add to Cart">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Spinner fx:id="quantitySpnr2" editable="true" layoutX="5.0" layoutY="132.0" prefHeight="25.0" prefWidth="82.0" />
+                  <Label fx:id="priceLbl2" layoutX="7.0" layoutY="78.0" prefHeight="25.0" prefWidth="77.0" text="₱100.00" textAlignment="CENTER">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="5.0" layoutY="103.0" prefHeight="25.0" prefWidth="77.0" text="Quantity" textAlignment="CENTER">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </Group>
+      <Group fx:id="group2" layoutX="370.0" layoutY="114.0" visible="false">
+         <children>
+            <ImageView fitHeight="190.0" fitWidth="164.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/MenuCategory3/ICC_Smores.png" />
+               </image>
+            </ImageView>
+            <Pane layoutX="170.0" layoutY="209.0" prefHeight="190.0" prefWidth="102.0">
+               <children>
+                  <Label fx:id="productLbl7" ellipsisString="" layoutX="6.0" prefHeight="76.0" prefWidth="82.0" text="Product 1" textOverrun="CLIP" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="addBtn7" layoutX="5.0" layoutY="165.0" mnemonicParsing="false" onAction="#addToCart" prefHeight="25.0" prefWidth="82.0" text="Add to Cart">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Spinner fx:id="quantitySpnr7" editable="true" layoutX="5.0" layoutY="132.0" prefHeight="25.0" prefWidth="82.0" />
+                  <Label fx:id="priceLbl7" layoutX="7.0" layoutY="78.0" prefHeight="25.0" prefWidth="77.0" text="₱100.00" textAlignment="CENTER">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="5.0" layoutY="103.0" prefHeight="25.0" prefWidth="77.0" text="Quantity" textAlignment="CENTER">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <ImageView fitHeight="190.0" fitWidth="164.0" layoutY="210.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/MenuCategory3/ICC_BananaSplit.png" />
+               </image>
+            </ImageView>
+            <Pane layoutX="170.0" prefHeight="190.0" prefWidth="102.0">
+               <children>
+                  <Label fx:id="productLbl5" ellipsisString="" layoutX="6.0" prefHeight="76.0" prefWidth="82.0" text="Product 1" textOverrun="CLIP" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="addBtn5" layoutX="5.0" layoutY="165.0" mnemonicParsing="false" onAction="#addToCart" text="Add to Cart">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Spinner fx:id="quantitySpnr5" editable="true" layoutX="5.0" layoutY="132.0" prefHeight="25.0" prefWidth="82.0" />
+                  <Label fx:id="priceLbl5" layoutX="7.0" layoutY="78.0" prefHeight="25.0" prefWidth="77.0" text="₱100.00" textAlignment="CENTER">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="5.0" layoutY="103.0" prefHeight="25.0" prefWidth="77.0" text="Quantity" textAlignment="CENTER">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <ImageView fitHeight="190.0" fitWidth="164.0" layoutX="317.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/MenuCategory3/ICC_Brownie.png" />
+               </image>
+            </ImageView>
+            <Pane layoutX="487.0" layoutY="209.0" prefHeight="190.0" prefWidth="102.0">
+               <children>
+                  <Label fx:id="productLbl8" ellipsisString="" layoutX="6.0" prefHeight="76.0" prefWidth="82.0" text="Product 1" textOverrun="CLIP" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="addBtn8" layoutX="5.0" layoutY="165.0" mnemonicParsing="false" onAction="#addToCart" prefHeight="25.0" prefWidth="82.0" text="Add to Cart">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Spinner fx:id="quantitySpnr8" editable="true" layoutX="5.0" layoutY="132.0" prefHeight="25.0" prefWidth="82.0" />
+                  <Label fx:id="priceLbl8" layoutX="7.0" layoutY="78.0" prefHeight="25.0" prefWidth="77.0" text="₱100.00" textAlignment="CENTER">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="5.0" layoutY="103.0" prefHeight="25.0" prefWidth="77.0" text="Quantity" textAlignment="CENTER">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <ImageView fitHeight="190.0" fitWidth="164.0" layoutX="317.0" layoutY="210.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/MenuCategory3/ICC_StrawberryCheesecake.png" />
+               </image>
+            </ImageView>
+            <Pane layoutX="487.0" prefHeight="190.0" prefWidth="102.0">
+               <children>
+                  <Label fx:id="productLbl6" ellipsisString="" layoutX="6.0" prefHeight="76.0" prefWidth="82.0" text="Product 1" textOverrun="CLIP" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="addBtn6" layoutX="5.0" layoutY="165.0" mnemonicParsing="false" onAction="#addToCart" prefHeight="25.0" prefWidth="82.0" text="Add to Cart">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Spinner fx:id="quantitySpnr6" editable="true" layoutX="5.0" layoutY="132.0" prefHeight="25.0" prefWidth="82.0" />
+                  <Label fx:id="priceLbl6" layoutX="7.0" layoutY="78.0" prefHeight="25.0" prefWidth="77.0" text="₱100.00" textAlignment="CENTER">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="5.0" layoutY="103.0" prefHeight="25.0" prefWidth="77.0" text="Quantity" textAlignment="CENTER">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </Group>
+      <Button fx:id="backBtn" layoutX="370.0" layoutY="538.0" mnemonicParsing="false" onAction="#switchPage" text="🢀" />
+      <Button fx:id="nextBtn" layoutX="915.0" layoutY="538.0" mnemonicParsing="false" onAction="#switchPage" text="🢂" />
+   </children>
+</AnchorPane>

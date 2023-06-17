@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MenuController">
+   <children>
+      <Button fx:id="category1Btn" layoutX="487.0" layoutY="124.0" mnemonicParsing="false" onAction="#menuCategory" prefHeight="174.0" prefWidth="150.0" text="Ice Cream" textOverrun="CLIP" wrapText="true">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Button>
+      <Button fx:id="category2Btn" layoutX="790.0" layoutY="124.0" mnemonicParsing="false" onAction="#menuCategory" prefHeight="174.0" prefWidth="150.0" text="Ice Cream Shake" textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Button>
+      <Button fx:id="category3Btn" layoutX="487.0" layoutY="328.0" mnemonicParsing="false" onAction="#menuCategory" prefHeight="174.0" prefWidth="150.0" text="Ice Cream Cake" textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Button>
+      <Button fx:id="category4Btn" layoutX="790.0" layoutY="328.0" mnemonicParsing="false" onAction="#menuCategory" prefHeight="174.0" prefWidth="149.0" text="Custom Ice Cream" textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Button>
+      <ImageView fitHeight="176.0" fitWidth="120.0" layoutX="370.0" layoutY="123.0">
+         <image>
+            <Image url="@../images/Menu/MenuCategory1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="176.0" fitWidth="120.0" layoutX="370.0" layoutY="328.0">
+         <image>
+            <Image url="@../images/Menu/MenuCategory3.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="176.0" fitWidth="120.0" layoutX="673.0" layoutY="124.0">
+         <image>
+            <Image url="@../images/Menu/MenuCategory2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="176.0" fitWidth="120.0" layoutX="673.0" layoutY="328.0">
+         <image>
+            <Image url="@../images/Menu/MenuCategory4.png" />
+         </image>
+      </ImageView>
+      <Group layoutX="23.0" layoutY="15.0">
+         <children>
+            <ImageView fitHeight="86.0" fitWidth="82.0" preserveRatio="true">
+               <image>
+                  <Image url="@../images/NavigationBar/Logo2.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="chillSwirlLbl" layoutX="87.0" layoutY="23.0" prefHeight="36.0" prefWidth="176.0" text="Chill &amp; Swirl" textFill="#e98bb7">
+               <font>
+                  <Font name="Fredoka One Regular" size="30.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="26.0" layoutY="117.0" preserveRatio="true">
+               <image>
+                  <Image url="@../images/NavigationBar/Home.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="homeBtn" layoutX="87.0" layoutY="114.0" mnemonicParsing="false" onAction="#navigationBar" prefHeight="35.0" prefWidth="176.0" text="Home" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="26.0" layoutY="178.0" preserveRatio="true">
+               <image>
+                  <Image url="@../images/NavigationBar/Menu.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="menuBtn" layoutX="87.0" layoutY="175.0" mnemonicParsing="false" onAction="#navigationBar" prefHeight="35.0" prefWidth="176.0" text="Menu" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="27.0" layoutY="239.0" preserveRatio="true">
+               <image>
+                  <Image url="@../images/NavigationBar/Cart.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="cartBtn" layoutX="87.0" layoutY="236.0" mnemonicParsing="false" onAction="#navigationBar" prefHeight="35.0" prefWidth="176.0" text="Cart" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="29.0" layoutY="300.0" preserveRatio="true">
+               <image>
+                  <Image url="@../images/NavigationBar/Ratings.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="ratingsBtn" layoutX="87.0" layoutY="297.0" mnemonicParsing="false" onAction="#navigationBar" prefHeight="35.0" prefWidth="176.0" text="Ratings" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="29.0" layoutY="361.0" preserveRatio="true">
+               <image>
+                  <Image url="@../images/NavigationBar/AboutUs.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="aboutUsBtn" layoutX="87.0" layoutY="358.0" mnemonicParsing="false" onAction="#navigationBar" prefHeight="35.0" prefWidth="176.0" text="About Us" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="29.0" layoutY="422.0" preserveRatio="true">
+               <image>
+                  <Image url="@../images/NavigationBar/Account.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="accountBtn" layoutX="87.0" layoutY="419.0" mnemonicParsing="false" onAction="#navigationBar" prefHeight="35.0" prefWidth="176.0" text="Account" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="29.0" layoutY="520.0" preserveRatio="true">
+               <image>
+                  <Image url="@../images/NavigationBar/Logout.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="logoutBtn" layoutX="87.0" layoutY="517.0" mnemonicParsing="false" onAction="#navigationBar" prefHeight="35.0" prefWidth="176.0" text="Logout" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Line endX="135.0" layoutX="130.0" layoutY="487.0" startX="-100.0" stroke="#e98bb7" strokeWidth="2.0" />
+         </children>
+      </Group>
+      <Label fx:id="label" layoutX="370.0" layoutY="33.0" text="Menu">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

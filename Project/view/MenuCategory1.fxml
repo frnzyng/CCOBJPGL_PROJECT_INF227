@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MenuCategory1Controller">
+   <children>
+      <Label fx:id="label" layoutX="370.0" layoutY="33.0" text="Ice Creams">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Group layoutX="23.0" layoutY="15.0">
+         <children>
+            <ImageView fitHeight="86.0" fitWidth="82.0" preserveRatio="true">
+               <image>
+                  <Image url="@../images/NavigationBar/Logo2.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="chillSwirlLbl" layoutX="87.0" layoutY="23.0" prefHeight="36.0" prefWidth="176.0" text="Chill &amp; Swirl" textFill="#e98bb7">
+               <font>
+                  <Font name="Fredoka One Regular" size="30.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="26.0" layoutY="117.0" preserveRatio="true">
+               <image>
+                  <Image url="@../images/NavigationBar/Home.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="homeBtn" layoutX="87.0" layoutY="114.0" mnemonicParsing="false" onAction="#navigationBar" prefHeight="35.0" prefWidth="176.0" text="Home" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="26.0" layoutY="178.0" preserveRatio="true">
+               <image>
+                  <Image url="@../images/NavigationBar/Menu.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="menuBtn" layoutX="87.0" layoutY="175.0" mnemonicParsing="false" onAction="#navigationBar" prefHeight="35.0" prefWidth="176.0" text="Menu" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="27.0" layoutY="239.0" preserveRatio="true">
+               <image>
+                  <Image url="@../images/NavigationBar/Cart.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="cartBtn" layoutX="87.0" layoutY="236.0" mnemonicParsing="false" onAction="#navigationBar" prefHeight="35.0" prefWidth="176.0" text="Cart" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="29.0" layoutY="300.0" preserveRatio="true">
+               <image>
+                  <Image url="@../images/NavigationBar/Ratings.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="ratingsBtn" layoutX="87.0" layoutY="297.0" mnemonicParsing="false" onAction="#navigationBar" prefHeight="35.0" prefWidth="176.0" text="Ratings" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="29.0" layoutY="361.0" preserveRatio="true">
+               <image>
+                  <Image url="@../images/NavigationBar/AboutUs.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="aboutUsBtn" layoutX="87.0" layoutY="358.0" mnemonicParsing="false" onAction="#navigationBar" prefHeight="35.0" prefWidth="176.0" text="About Us" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="29.0" layoutY="422.0" preserveRatio="true">
+               <image>
+                  <Image url="@../images/NavigationBar/Account.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="accountBtn" layoutX="87.0" layoutY="419.0" mnemonicParsing="false" onAction="#navigationBar" prefHeight="35.0" prefWidth="176.0" text="Account" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="29.0" layoutY="520.0" preserveRatio="true">
+               <image>
+                  <Image url="@../images/NavigationBar/Logout.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="logoutBtn" layoutX="87.0" layoutY="517.0" mnemonicParsing="false" onAction="#navigationBar" prefHeight="35.0" prefWidth="176.0" text="Logout" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Line endX="135.0" layoutX="130.0" layoutY="487.0" startX="-100.0" stroke="#e98bb7" strokeWidth="2.0" />
+         </children>
+      </Group>
+      <Group fx:id="group1" layoutX="370.0" layoutY="88.0">
+         <children>
+            <Pane layoutY="129.0" prefHeight="82.0" prefWidth="176.0">
+               <children>
+                  <Label fx:id="productLbl1" layoutX="1.0" layoutY="3.0" prefHeight="30.0" prefWidth="176.0" text="Product 1" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="addBtn1" layoutX="93.0" layoutY="55.0" mnemonicParsing="false" onAction="#addToCart" text="Add to Cart">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Spinner fx:id="quantitySpnr1" editable="true" layoutX="1.0" layoutY="55.0" prefHeight="25.0" prefWidth="82.0" />
+                  <Label fx:id="priceLbl1" layoutX="93.0" layoutY="27.0" prefHeight="25.0" prefWidth="77.0" text="₱100.00" textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="1.0" layoutY="27.0" prefHeight="25.0" prefWidth="77.0" text="Quantity" textAlignment="CENTER">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <ImageView fitHeight="129.0" fitWidth="176.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/MenuCategory1/IC_Chocolate.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="129.0" fitWidth="176.0" layoutY="225.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/MenuCategory1/IC_Mocha.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="129.0" fitWidth="176.0" layoutX="199.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/MenuCategory1/IC_Vanilla.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="129.0" fitWidth="176.0" layoutX="199.0" layoutY="225.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/MenuCategory1/IC_Cookies&amp;Cream.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="129.0" fitWidth="176.0" layoutX="398.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/MenuCategory1/IC_Strawberry.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="129.0" fitWidth="176.0" layoutX="398.0" layoutY="225.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/MenuCategory1/IC_MintChocolate.jpg" />
+               </image>
+            </ImageView>
+            <Pane layoutY="354.0" prefHeight="82.0" prefWidth="176.0">
+               <children>
+                  <Label fx:id="productLbl4" layoutX="1.0" layoutY="3.0" prefHeight="30.0" prefWidth="176.0" text="Product 1" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="addBtn4" layoutX="93.0" layoutY="55.0" mnemonicParsing="false" onAction="#addToCart" text="Add to Cart">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Spinner fx:id="quantitySpnr4" editable="true" layoutX="1.0" layoutY="55.0" prefHeight="25.0" prefWidth="82.0" />
+                  <Label fx:id="priceLbl4" layoutX="93.0" layoutY="27.0" prefHeight="25.0" prefWidth="77.0" text="₱100.00" textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="1.0" layoutY="27.0" prefHeight="25.0" prefWidth="77.0" text="Quantity" textAlignment="CENTER">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="199.0" layoutY="129.0" prefHeight="82.0" prefWidth="176.0">
+               <children>
+                  <Label fx:id="productLbl2" layoutX="1.0" layoutY="3.0" prefHeight="30.0" prefWidth="176.0" text="Product 1" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="addBtn2" layoutX="93.0" layoutY="55.0" mnemonicParsing="false" onAction="#addToCart" text="Add to Cart">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Spinner fx:id="quantitySpnr2" editable="true" layoutX="1.0" layoutY="55.0" prefHeight="25.0" prefWidth="82.0" />
+                  <Label fx:id="priceLbl2" layoutX="93.0" layoutY="27.0" prefHeight="25.0" prefWidth="77.0" text="₱100.00" textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="1.0" layoutY="27.0" prefHeight="25.0" prefWidth="77.0" text="Quantity" textAlignment="CENTER">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="398.0" layoutY="129.0" prefHeight="82.0" prefWidth="176.0">
+               <children>
+                  <Label fx:id="productLbl3" layoutX="1.0" layoutY="3.0" prefHeight="30.0" prefWidth="176.0" text="Product 1" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="addBtn3" layoutX="93.0" layoutY="55.0" mnemonicParsing="false" onAction="#addToCart" text="Add to Cart">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Spinner fx:id="quantitySpnr3" editable="true" layoutX="1.0" layoutY="55.0" prefHeight="25.0" prefWidth="82.0" />
+                  <Label fx:id="priceLbl3" layoutX="93.0" layoutY="27.0" prefHeight="25.0" prefWidth="77.0" text="₱100.00" textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="1.0" layoutY="27.0" prefHeight="25.0" prefWidth="77.0" text="Quantity" textAlignment="CENTER">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="199.0" layoutY="354.0" prefHeight="82.0" prefWidth="176.0">
+               <children>
+                  <Label fx:id="productLbl5" layoutX="1.0" layoutY="3.0" prefHeight="30.0" prefWidth="176.0" text="Product 1" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="addBtn5" layoutX="93.0" layoutY="55.0" mnemonicParsing="false" onAction="#addToCart" text="Add to Cart">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Spinner fx:id="quantitySpnr5" editable="true" layoutX="1.0" layoutY="55.0" prefHeight="25.0" prefWidth="82.0" />
+                  <Label fx:id="priceLbl5" layoutX="93.0" layoutY="27.0" prefHeight="25.0" prefWidth="77.0" text="₱100.00" textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="1.0" layoutY="27.0" prefHeight="25.0" prefWidth="77.0" text="Quantity" textAlignment="CENTER">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="398.0" layoutY="354.0" prefHeight="82.0" prefWidth="176.0">
+               <children>
+                  <Label fx:id="productLbl6" layoutX="1.0" layoutY="3.0" prefHeight="30.0" prefWidth="176.0" text="Product 1" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="addBtn6" layoutX="93.0" layoutY="55.0" mnemonicParsing="false" onAction="#addToCart" text="Add to Cart">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Spinner fx:id="quantitySpnr6" editable="true" layoutX="1.0" layoutY="55.0" prefHeight="25.0" prefWidth="82.0" />
+                  <Label fx:id="priceLbl6" layoutX="93.0" layoutY="27.0" prefHeight="25.0" prefWidth="77.0" text="₱100.00" textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="1.0" layoutY="27.0" prefHeight="25.0" prefWidth="77.0" text="Quantity" textAlignment="CENTER">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </Group>
+      <Group fx:id="group2" layoutX="370.0" layoutY="88.0" visible="false">
+         <children>
+            <Pane layoutY="129.0" prefHeight="82.0" prefWidth="176.0">
+               <children>
+                  <Label fx:id="productLbl7" layoutX="1.0" layoutY="3.0" prefHeight="30.0" prefWidth="176.0" text="Product 1" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="addBtn7" layoutX="93.0" layoutY="55.0" mnemonicParsing="false" onAction="#addToCart" text="Add to Cart">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Spinner fx:id="quantitySpnr7" editable="true" layoutX="1.0" layoutY="55.0" prefHeight="25.0" prefWidth="82.0" />
+                  <Label fx:id="priceLbl7" layoutX="93.0" layoutY="27.0" prefHeight="25.0" prefWidth="77.0" text="₱100.00" textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="1.0" layoutY="27.0" prefHeight="25.0" prefWidth="77.0" text="Quantity" textAlignment="CENTER">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <ImageView fitHeight="129.0" fitWidth="176.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/MenuCategory1/IC_Cheese.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="129.0" fitWidth="176.0" layoutY="225.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/MenuCategory1/IC_Pistachio.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="129.0" fitWidth="176.0" layoutX="199.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/MenuCategory1/IC_RockyRoad.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="129.0" fitWidth="176.0" layoutX="199.0" layoutY="225.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/MenuCategory1/IC_Matcha.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="129.0" fitWidth="176.0" layoutX="398.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/MenuCategory1/IC_KitKat.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="129.0" fitWidth="176.0" layoutX="398.0" layoutY="225.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/MenuCategory1/IC_CoffeeCrumble.jpg" />
+               </image>
+            </ImageView>
+            <Pane layoutY="354.0" prefHeight="82.0" prefWidth="176.0">
+               <children>
+                  <Label fx:id="productLbl10" layoutX="1.0" layoutY="3.0" prefHeight="30.0" prefWidth="176.0" text="Product 1" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="addBtn10" layoutX="93.0" layoutY="55.0" mnemonicParsing="false" onAction="#addToCart" text="Add to Cart">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Spinner fx:id="quantitySpnr10" editable="true" layoutX="1.0" layoutY="55.0" prefHeight="25.0" prefWidth="82.0" />
+                  <Label fx:id="priceLbl10" layoutX="93.0" layoutY="27.0" prefHeight="25.0" prefWidth="77.0" text="₱100.00" textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="1.0" layoutY="27.0" prefHeight="25.0" prefWidth="77.0" text="Quantity" textAlignment="CENTER">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="199.0" layoutY="129.0" prefHeight="82.0" prefWidth="176.0">
+               <children>
+                  <Label fx:id="productLbl8" layoutX="1.0" layoutY="3.0" prefHeight="30.0" prefWidth="176.0" text="Product 1" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="addBtn8" layoutX="93.0" layoutY="55.0" mnemonicParsing="false" onAction="#addToCart" text="Add to Cart">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Spinner fx:id="quantitySpnr8" editable="true" layoutX="1.0" layoutY="55.0" prefHeight="25.0" prefWidth="82.0" />
+                  <Label fx:id="priceLbl8" layoutX="93.0" layoutY="27.0" prefHeight="25.0" prefWidth="77.0" text="₱100.00" textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="1.0" layoutY="27.0" prefHeight="25.0" prefWidth="77.0" text="Quantity" textAlignment="CENTER">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="398.0" layoutY="129.0" prefHeight="82.0" prefWidth="176.0">
+               <children>
+                  <Label fx:id="productLbl9" layoutX="1.0" layoutY="3.0" prefHeight="30.0" prefWidth="176.0" text="Product 1" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="addBtn9" layoutX="93.0" layoutY="55.0" mnemonicParsing="false" onAction="#addToCart" text="Add to Cart">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Spinner fx:id="quantitySpnr9" editable="true" layoutX="1.0" layoutY="55.0" prefHeight="25.0" prefWidth="82.0" />
+                  <Label fx:id="priceLbl9" layoutX="93.0" layoutY="27.0" prefHeight="25.0" prefWidth="77.0" text="₱100.00" textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="1.0" layoutY="27.0" prefHeight="25.0" prefWidth="77.0" text="Quantity" textAlignment="CENTER">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="199.0" layoutY="354.0" prefHeight="82.0" prefWidth="176.0">
+               <children>
+                  <Label fx:id="productLbl11" layoutX="1.0" layoutY="3.0" prefHeight="30.0" prefWidth="176.0" text="Product 1" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="addBtn11" layoutX="93.0" layoutY="55.0" mnemonicParsing="false" onAction="#addToCart" text="Add to Cart">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Spinner fx:id="quantitySpnr11" editable="true" layoutX="1.0" layoutY="55.0" prefHeight="25.0" prefWidth="82.0" />
+                  <Label fx:id="priceLbl11" layoutX="93.0" layoutY="27.0" prefHeight="25.0" prefWidth="77.0" text="₱100.00" textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="1.0" layoutY="27.0" prefHeight="25.0" prefWidth="77.0" text="Quantity" textAlignment="CENTER">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="398.0" layoutY="354.0" prefHeight="82.0" prefWidth="176.0">
+               <children>
+                  <Label fx:id="productLbl12" layoutX="1.0" layoutY="3.0" prefHeight="30.0" prefWidth="176.0" text="Product 1" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="addBtn12" layoutX="93.0" layoutY="55.0" mnemonicParsing="false" onAction="#addToCart" text="Add to Cart">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Spinner fx:id="quantitySpnr12" editable="true" layoutX="1.0" layoutY="55.0" prefHeight="25.0" prefWidth="82.0" />
+                  <Label fx:id="priceLbl12" layoutX="93.0" layoutY="27.0" prefHeight="25.0" prefWidth="77.0" text="₱100.00" textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="1.0" layoutY="27.0" prefHeight="25.0" prefWidth="77.0" text="Quantity" textAlignment="CENTER">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </Group>
+      <Button fx:id="backBtn" layoutX="370.0" layoutY="538.0" mnemonicParsing="false" onAction="#switchPage" text="🢀" />
+      <Button fx:id="nextBtn" layoutX="915.0" layoutY="538.0" mnemonicParsing="false" onAction="#switchPage" text="🢂" />
+   </children>
+</AnchorPane>
